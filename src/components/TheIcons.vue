@@ -1,4 +1,5 @@
 <template>
+  <!-- Icons -->
   <div>
     <!-- Denne del kan inkluderes i starten af en side eller et component. Det skal bare være inden det bruges. -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
@@ -63,7 +64,7 @@
         fill="currentColor"
         stroke="none"
         xmlns="http://www.w3.org/2000/svg"
-        viewbox="0 0 36 48"
+        viewBox="0 0 36 48"
       >
         <defs />
         <g data-name="Group 41">
@@ -78,7 +79,7 @@
       <symbol
         id="bean"
         xmlns="http://www.w3.org/2000/svg"
-        viewbox="0 0 37 48"
+        viewBox="0 0 37 48"
         fill="currentColor"
       >
         <defs />
@@ -100,7 +101,7 @@
       <symbol
         id="grind"
         xmlns="http://www.w3.org/2000/svg"
-        viewbox="0 0 10 10"
+        viewBox="0 0 10 10"
         fill="currentColor"
       >
         <defs />
@@ -130,7 +131,7 @@
       </symbol>
 
       <!--  Time  -->
-      <symbol id="time" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 11 11">
+      <symbol id="time" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11">
         <defs />
         <g data-name="Group 69">
           <g fill="currentColor" stroke-width="1.2" data-name="Ellipse 29">
@@ -156,7 +157,7 @@
       <symbol
         id="aeropress"
         xmlns="http://www.w3.org/2000/svg"
-        viewbox="0 0 28 60"
+        viewBox="0 0 28 60"
         fill="currentColor"
       >
         <defs />
@@ -190,7 +191,7 @@
       <symbol
         id="french"
         xmlns="http://www.w3.org/2000/svg"
-        viewbox="0 0 38 53"
+        viewBox="0 0 38 53"
         fill="currentColor"
         data-name="Group 71"
       >
@@ -281,7 +282,7 @@
         id="chemex"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
-        viewbox="0 0 36 59"
+        viewBox="0 0 36 59"
         data-name="Group 75"
       >
         <defs />
@@ -300,7 +301,7 @@
         id="kalita"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
-        viewbox="0 0 39 41"
+        viewBox="0 0 39 41"
       >
         <defs />
         <g data-name="Group 72">
@@ -330,4 +331,5 @@
       </symbol>
     </svg>
   </div>
+  <!-- Icons End -->
 </template>
