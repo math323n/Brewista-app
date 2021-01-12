@@ -1,16 +1,17 @@
 <template>
-  <div class="app">
+  <div class="h-full sm:container mx-auto">
+    <!-- Router View Start -->
     <router-view></router-view>
-    <the-navigation></the-navigation>
+    <!-- Router View End-->
   </div>
+  <the-icons> </the-icons>
 </template>
 
 <script>
-import TheNavigation from './components/TheNavigation.vue';
-
+import TheIcons from "./components/TheIcons.vue";
 export default {
   components: {
-    TheNavigation
-  }
-}
+    TheIcons,
+  },
+};
 </script>

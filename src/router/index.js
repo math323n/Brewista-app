@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from "vue-router";
 
 // Import home view
 import Home from "../views/home.vue";
+import Coffees from "../views/coffees.vue";
 
 // Create web history variable
 const history = createWebHistory();
@@ -13,6 +14,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/coffees",
+    name: "Coffees",
+    component: Coffees,
   },
 ];
 
