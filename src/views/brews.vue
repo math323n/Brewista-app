@@ -8,11 +8,13 @@
       </svg>
     </router-link>
     <!-- Link End -->
+
     <!-- Text -->
     <h1 class="font-medium ml-4">How do you want to brew</h1>
     <!-- Text End -->
   </header>
   <!-- Header End -->
+
   <!-- Brews -->
   <div class="m-5">
     <!-- Favorite Brews -->
@@ -36,6 +38,7 @@
       </ul>
     </section>
     <!-- Favorite Brews End -->
+
     <!-- Other Brews -->
     <section>
       <h2 class="text-grayed">TRY A NEW RECIPE</h2>
@@ -86,7 +89,7 @@ export default {
     favoriteBrews: function () {
       return this.allBrews.filter((brew) => brew.isFavorite === true);
     },
-    // Property for getting not favorite brews
+    // Property for getting unfavorite brews
     brews: function () {
       return this.allBrews.filter((brew) => brew.isFavorite === false);
     },

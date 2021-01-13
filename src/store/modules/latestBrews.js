@@ -7,12 +7,12 @@ const getters = {
 };
 
 const actions = {
-  // Create
+  // Create bew
   async addLatestBrew({ commit }, newBrew) {
     // Get local storage array
     const oldBrews = JSON.parse(localStorage.getItem("latestBrews")) || [];
 
-    // Bad way of doing it, but it works ¯\_(ツ)_/¯
+    // Set new ID to latest + 1, not optimal but it works.
     newBrew.id = state.latests.length + 1;
 
     // Push new brew to the array
@@ -47,7 +47,7 @@ const actions = {
     // Save the array to local storage
     localStorage.setItem("latestBrews", JSON.stringify(brews));
 
-    // Local Storage Code Here ...
+    // Local Storage Code Here
     commit("removeLatestBrew", id);
   },
 };

@@ -8,11 +8,13 @@
       </svg>
     </router-link>
     <!-- Link End -->
+    
     <!-- Text -->
     <h1 class="font-medium ml-4">Pick your Coffee</h1>
     <!-- Text End -->
   </header>
   <!-- Header End -->
+
   <!-- Coffees -->
   <ul>
     <coffee-list-item

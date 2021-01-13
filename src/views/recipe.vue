@@ -13,6 +13,7 @@
       <!-- Icon End -->
     </router-link>
     <!-- Link End -->
+
     <!-- Selected Brew -->
     <base-brew-item
       :title="selectedBrew.title"
@@ -25,6 +26,7 @@
     <!-- Selected Bred End -->
   </header>
   <!-- Header End -->
+
   <!-- Recipe -->
   <article class="flex flex-grow">
     <!-- Steps -->
@@ -42,6 +44,7 @@
     <!-- Steps End -->
   </article>
   <!-- Recipe End -->
+  
   <!-- Footer -->
   <footer class="flex justify-end mr-6 mb-12">
     <!-- Link -->

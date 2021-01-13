@@ -11,7 +11,7 @@
         <h1 class="font-bold">{{ title }}</h1>
         <p
           v-if="location !== undefined"
-          class="font-extralight text-xs text-grayed"
+          class="font-extralight text-xs text-gray"
         >
           {{ location }}
         </p>
@@ -24,7 +24,7 @@
           <svg class="h-3 w-3 text-grayer mr-1">
             <use xlink:href="#bean"></use>
           </svg>
-          <p class="font-extralight text-xs text-grayer">{{ beanAmount }}g</p>
+          <p class="font-extralight text-xs text-gray">{{ beanAmount }}g</p>
         </li>
         <!-- Beans End -->
         <!-- Water -->
@@ -32,7 +32,7 @@
           <svg class="h-3 w-3 text-grayer mr-1">
             <use xlink:href="#water"></use>
           </svg>
-          <p class="font-extralight text-xs text-grayer">{{ waterAmount }}ml</p>
+          <p class="font-extralight text-xs text-gray">{{ waterAmount }}ml</p>
         </li>
         <!-- Water End -->
         <!-- Grind -->
@@ -40,7 +40,7 @@
           <svg class="h-3 w-3 text-grayer mr-1">
             <use xlink:href="#grind"></use>
           </svg>
-          <p class="font-extralight text-xs text-grayer">{{ profile }}</p>
+          <p class="font-extralight text-xs text-gray">{{ profile }}</p>
         </li>
         <!-- Grind End -->
         <!-- Time -->
@@ -48,7 +48,7 @@
           <svg class="h-3 w-3 text-grayer mr-1">
             <use xlink:href="#time"></use>
           </svg>
-          <p class="font-extralight text-xs text-grayer">{{ time }}</p>
+          <p class="font-extralight text-xs text-gray">{{ time }}</p>
         </li>
         <!-- Time End -->
       </ul>
@@ -59,7 +59,9 @@
       v-if="deleteBrew !== null"
       class="flex flex-grow justify-end items-center h-4 mr-3"
     >
-      <button @click="deleteBrew(this.id)" class="font-medium text-grayed">X</button>
+      <button @click="deleteBrew(this.id)" class="font-medium text-grayed">
+        X
+      </button>
     </span>
     <!-- Delete End -->
   </div>

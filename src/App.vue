@@ -1,11 +1,8 @@
 <template>
-  <!-- Container -->
   <div class="h-full flex flex-col max-w-xl mx-auto">
-    <!-- Router View Start -->
+    <!-- Router View -->
     <router-view></router-view>
-    <!-- Router View End-->
   </div>
-  <!-- Container End -->
   <the-icons> </the-icons>
 </template>
 

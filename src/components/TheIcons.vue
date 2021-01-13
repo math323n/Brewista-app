@@ -4,7 +4,7 @@
     <!-- Denne del kan inkluderes i starten af en side eller et component. Det skal bare være inden det bruges. -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <!--  ICONS  -->
-      <!--  Arrow Back  -->
+      <!--  Arrow Back Icon-->
       <symbol
         id="arrowBack"
         xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
         />
       </symbol>
 
-      <!--   Arrow forward -->
+      <!--   Arrow forward Icon-->
       <symbol
         id="arrowForward"
         xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@
         />
       </symbol>
 
-      <!--   User icon -->
+      <!--   User icon Icon-->
       <symbol
         id="user"
         xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@
         />
       </symbol>
 
-      <!--  Water -->
+      <!--  Water  Icon-->
       <symbol
         id="water"
         fill="currentColor"
@@ -75,7 +75,7 @@
         </g>
       </symbol>
 
-      <!--  Coffee Bean  -->
+      <!--  Coffee Bean Icon -->
       <symbol
         id="bean"
         xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
         </g>
       </symbol>
 
-      <!--  Grind size  -->
+      <!--  Grind size Icon-->
       <symbol
         id="grind"
         xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +130,7 @@
         </g>
       </symbol>
 
-      <!--  Time  -->
+      <!--  Time Icon -->
       <symbol id="time" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11">
         <defs />
         <g data-name="Group 69">
@@ -153,7 +153,7 @@
         </g>
       </symbol>
 
-      <!--   Aeropress -->
+      <!--  Aeropress Icon -->
       <symbol
         id="aeropress"
         xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +187,7 @@
         </g>
       </symbol>
 
-      <!--   French press -->
+      <!--   French press Icon -->
       <symbol
         id="french"
         xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +226,7 @@
         />
       </symbol>
 
-      <!--  Cold infusion  -->
+      <!--  Cold infusion Icon -->
       <svg
         id="infusion"
         xmlns="http://www.w3.org/2000/svg"
@@ -277,7 +277,7 @@
         </g>
       </svg>
 
-      <!-- Chemex -->
+      <!-- Chemex Icon -->
       <symbol
         id="chemex"
         fill="currentColor"
@@ -296,7 +296,7 @@
         />
       </symbol>
 
-      <!-- Kalita Wave   -->
+      <!-- Kalita Wave Icon -->
       <symbol
         id="kalita"
         xmlns="http://www.w3.org/2000/svg"
@@ -331,5 +331,5 @@
       </symbol>
     </svg>
   </div>
-  <!-- Icons End -->
+  <!-- Icons End Icon -->
 </template>

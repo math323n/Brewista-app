@@ -1,25 +1,25 @@
-// Import Vue.
+// Import Vue
 import { createApp } from "vue";
 
-// Import the app.
+// Import the app
 import App from "./App.vue";
 
-// Import Vuex store.
+// Import Vuex store
 import store from "./store/index.js";
 
 // Import Vue Router.
 import router from "./router/index.js";
 
-// Import stylesheet.
+// Import CSS stylesheet for tailwind
 import "./index.css";
 
-// Create the app.
+// Create the vue app
 const app = createApp(App);
 
-// Connect the app to the store.
+// Connect the app to the vuex store
 app.use(store);
 
-// Connect the app to the router.
+// Connect the app to the router
 app.use(router);
 
 // Mount the app.
