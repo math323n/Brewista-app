@@ -1,5 +1,3 @@
-// import axios from "axios";
-
 const state = {
   brews: [],
 };
@@ -9,82 +7,121 @@ const getters = {
 };
 
 const actions = {
+  // Create
+  async addBrew({ commit }, brew) {
+    // Local Storage Code Here ...
+    // commit("newBrew", brew);
+  },
+  // Read
   async fetchBrews({ commit }) {
+    // Hardcoded, sadly...
     const brews = [
       {
         id: 1,
-        icon: "aeropress",
+        icon: "#aeropress",
         title: "AeroPress",
         beanAmount: 16,
         waterAmount: 230,
         profile: "Medium",
-        time: 1,
-        isFavorite: true
+        time: "1 minut",
+        isFavorite: true,
+        recipeSteps: {
+          one: "Add ground coffee to Inverse Aeropress",
+          two: "Start timer",
+          three: "Add 50g of 93c water to aeropress for 10s",
+          four: "Stir five times",
+          five: "Add last 180g of water and stir to mix",
+          six: "After 1 min gently press coffee into cup",
+        },
       },
       {
         id: 2,
-        icon: "french",
+        icon: "#french",
         title: "French Press",
         beanAmount: 33,
         waterAmount: 500,
         profile: "Coarse",
-        time: 4,
-        isFavorite: false
+        time: "4 min",
+        isFavorite: false,
+        recipeSteps: {
+          one: "Add ground coffee to French Press",
+          two: "Start timer and pour water over coffee",
+          three: "Stir with a spoon",
+          four:
+            "After 4 min, break through the crust of the coffee on the top to let the coffee fall to the bottom",
+          five: "Remove big particles and foam still floating on top",
+          six: "Let coffee sit for 30 sec. Then gently press down the handle",
+        },
       },
       {
         id: 3,
-        icon: "kalita",
+        icon: "#kalita",
         title: "Kalita Wave",
         beanAmount: 16,
         waterAmount: 230,
         profile: "Medium",
-        time: 5,
-        isFavorite: false
+        time: "5 min",
+        isFavorite: false,
+        recipeSteps: {
+          one: "Add ground coffee to Inverse Aeropress",
+          two: "Start timer",
+          three: "Add 50g of 93c water to aeropress for 10s",
+          four: "Stir five times",
+          five: "Add last 180g of water and stir to mix",
+          six: "After 1 min gently press coffee into cup",
+        },
       },
       {
         id: 4,
-        icon: "infusion",
+        icon: "#infusion",
         title: "Cold Infusion",
         beanAmount: 16,
         waterAmount: 230,
         profile: "Medium",
-        time: 120,
-        isFavorite: false
+        time: "2 timer",
+        isFavorite: false,
+        recipeSteps: {
+          one: "Add ground coffee to Inverse Aeropress",
+          two: "Start timer",
+          three: "Add 50g of 93c water to aeropress for 10s",
+          four: "Stir five times",
+          five: "Add last 180g of water and stir to mix",
+          six: "After 1 min gently press coffee into cup",
+        },
       },
       {
         id: 5,
-        icon: "chemex",
+        icon: "#chemex",
         title: "Chemex",
         beanAmount: 16,
         waterAmount: 230,
         profile: "Fine",
-        time: 3,
-        isFavorite: false
+        time: "3 minut",
+        isFavorite: false,
+        recipeSteps: {
+          one: "Add ground coffee to French Press",
+          two: "Start timer and pour water over coffee",
+          three: "Stir with a spoon",
+          four:
+            "After 4 min, break through the crust of the coffee on the top to let the coffee fall to the bottom",
+          five: "Remove big particles and foam still floating on top",
+          six: "Let coffee sit for 30 sec. Then gently press down the handle",
+        },
       },
     ];
 
+    // Commit state change
     commit("setBrews", brews);
   },
-  async addBrew({ commit }, title) {
-    // Code here ...
-    // commit("newBrew", response.data);
-  },
-  async deleteBrew({ commit }, id) {
-    // Code here ...
-    // commit("removeBrew", id);
-  },
-  async filterBrews({ commit }, e) {
-    // Get selected number
-    const limit = parseInt(
-      e.target.options[e.target.options.selectedIndex].innerText
-    );
-
-    // Code here ...
-    // commit("setBrews", response.data);
-  },
+  // Update
   async updateBrew({ commit }, updatedBrew) {
-    // Code here ...
-    // commit("updateBrew", response.data);
+    // Local Storage Code Here ...
+    // commit("updateBrew", updatedBrew);
+  },
+  // Delete
+  async deleteBrew({ commit }, brew) {
+    // Local Storage Code Here ...
+    // commit("removeBrew", brew);
   },
 };
 

@@ -191,7 +191,7 @@
       <symbol
         id="french"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 38 53"
+        viewBox="0 0 36 59"
         fill="currentColor"
         data-name="Group 71"
       >
@@ -301,7 +301,7 @@
         id="kalita"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
-        viewBox="0 0 39 41"
+        viewBox="0 -8 36 59"
       >
         <defs />
         <g data-name="Group 72">

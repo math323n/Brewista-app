@@ -1,5 +1,3 @@
-// import axios from "axios";
-
 const state = {
   coffees: [],
 };
@@ -9,6 +7,12 @@ const getters = {
 };
 
 const actions = {
+  // Create
+  async addCoffee({ commit }, coffee) {
+    // Local Storage Code here ...
+    // commit("newTodo", coffee);
+  },
+  // Read
   async fetchCoffees({ commit }) {
     const coffees = [
       {
@@ -16,7 +20,7 @@ const actions = {
         title: "Calahute Alto",
         location: "Nordhavn Coffee",
         description:
-          "Very smooth with a full and round body accompanied by notes of dried fruit and ripe banan, rounded by a mild acidity reminicent of tart fuit.",
+          "Very smooth with a full and round body accompanied by notes of dried fruit and ripe banana, rounded by a mild acidity reminiscent of tart fruit.",
         process: "Washed",
         varieties: "Castilo, Caturra",
         roastProfile: "Medium",
@@ -33,30 +37,41 @@ const actions = {
         roastProfile: "Medium",
         country: "Ethiopia",
       },
+      {
+        id: 3,
+        title: "Vista Hermosa",
+        location: "Coffee collective",
+        description:
+          "Clean and balanced coffee with an elegant acidity. Aromas of pecan nuts, nougat, and orange blossom.",
+        process: "Washed",
+        varieties: "Caturra, Pache",
+        roastProfile: "Medium",
+        country: "Guatemala",
+      },
+      {
+        id: 4,
+        title: "Takesi Geisha",
+        location: "Coffee collective",
+        description:
+          "Super intense and complex aroma. Clean honey-sweet with a delicate acidity. Lychee, jasmine and bergamot.",
+        process: "Washed",
+        varieties: "Geisha",
+        roastProfile: "Medium",
+        country: "Bolivia",
+      },
     ];
 
     commit("setCoffee", coffees);
   },
-  async addCoffee({ commit }, title) {
-    // Code here ...
-    // commit("newTodo", response.data);
+  // Update
+  async updateCoffee({ commit }, updatedCoffee) {
+    // Local Storage Code Here ...
+    // commit("updateTodo", updatedCoffee);
   },
+  // Delete
   async deleteCoffee({ commit }, id) {
-    // Code here ...
+    // Local Storage Code Here ...
     // commit("removeTodo", id);
-  },
-  async filterCoffees({ commit }, e) {
-    // Get selected number
-    const limit = parseInt(
-      e.target.options[e.target.options.selectedIndex].innerText
-    );
-
-    // Code here ...
-    // commit("setTodos", response.data);
-  },
-  async updateCoffee({ commit }, updCoffee) {
-    // Code here ...
-    // commit("updateTodo", response.data);
   },
 };
 

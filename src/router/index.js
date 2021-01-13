@@ -5,6 +5,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "../views/home.vue";
 import Coffees from "../views/coffees.vue";
 import Brews from "../views/brews.vue";
+import Recipe from "../views/recipe.vue";
 
 // Create web history variable
 const history = createWebHistory();
@@ -19,13 +20,18 @@ const routes = [
   {
     path: "/coffees",
     name: "Coffees",
-    component: Coffees
+    component: Coffees,
   },
   {
-    path: "/coffees/brews/:id",
+    path: "/coffees/:coffeeId/brews",
     name: "Brews",
-    component: Brews
-  }
+    component: Brews,
+  },
+  {
+    path: "/coffees/:coffeeId/brews/:brewId/recipe/",
+    name: "Recipe",
+    component: Recipe,
+  },
 ];
 
 // Create a new router object

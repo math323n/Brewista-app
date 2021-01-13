@@ -16,9 +16,20 @@
     <h3 class="text-grayed mx-6 mt-8">LATEST BREWS</h3>
     <!-- Brew List -->
     <ul class="mx-6">
-      <brew-list-item></brew-list-item>
-      <brew-list-item></brew-list-item>
-      <brew-list-item></brew-list-item>
+      <base-brew-item
+        v-for="latest in allLatestBrews"
+        :key="latest.id"
+        :id="latest.id"
+        :icon="latest.icon"
+        :title="latest.title"
+        :location="latest.location"
+        :beanAmount="latest.beanAmount"
+        :waterAmount="latest.waterAmount"
+        :profile="latest.profile"
+        :time="latest.time"
+        :border="true"
+      >
+      </base-brew-item>
     </ul>
     <!-- Brew List End -->
   </div>
@@ -31,13 +42,34 @@
 <script>
 // Import navigation component
 import TheNavigation from "../components/TheNavigation.vue";
-import BrewListItem from "../components/BrewListItem.vue";
+import { mapGetters, mapActions } from "vuex";
+import BaseBrewItem from "../components/BaseBrewItem.vue";
 
 export default {
   name: "Home",
   components: {
     TheNavigation,
-    BrewListItem,
+    BaseBrewItem,
+  },
+  provide: {
+    // Provide delete method for the base brew item
+    deleteBrew: function (id) {
+      // This is fucking magic
+      // Its not even defined in here
+      this.deleteLatestBrew(id);
+    },
+  },
+  methods: {
+    // Spread map actions
+    ...mapActions(["fetchLatestBrews"]),
+  },
+  computed: {
+    // Spread map getters
+    ...mapGetters(["allLatestBrews"]),
+  },
+  created() {
+    // Fetch coffees
+    this.fetchLatestBrews();
   },
 };
 </script>
