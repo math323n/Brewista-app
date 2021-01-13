@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full sm:container mx-auto">
+  <div class="h-full flex flex-col max-w-xl mx-auto">
     <!-- Router View Start -->
     <router-view></router-view>
     <!-- Router View End-->
@@ -8,10 +8,11 @@
 </template>
 
 <script>
-import TheIcons from "./components/TheIcons.vue";
+import TheIcons from './components/TheIcons.vue';
+
 export default {
   components: {
-    TheIcons,
-  },
-};
+    TheIcons
+  }
+}
 </script>

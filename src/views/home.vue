@@ -32,6 +32,7 @@
 // Import navigation component
 import TheNavigation from "../components/TheNavigation.vue";
 import BrewListItem from "../components/BrewListItem.vue";
+
 export default {
   name: "Home",
   components: {

@@ -1,0 +1,18 @@
+{
+  "cSpell.ignoreWords": [
+    "avenir",
+    "avhears",
+    "eksamen",
+    "helvetica",
+    "rcon",
+    "tailwind",
+    "todos",
+    "v",
+    "vite",
+    "vuex"
+  ],
+  "files.exclude": {
+    "node_modules": true,
+    ".vscode": true
+  }
+}

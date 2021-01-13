@@ -5,9 +5,7 @@
         <use xlink:href="#arrowBack"></use>
       </svg>
     </router-link>
-    <h1 class="font-medium ml-4">
-      How do you want to brew {{ $route.params.id }}?
-    </h1>
+    <h1 class="font-medium ml-4">How do you want to brew</h1>
   </header>
   <div>
     <section>
@@ -17,3 +15,24 @@
   </div>
   <p>Brews</p>
 </template>
+
+<script>
+import { mapGetters, mapActions } from "vuex";
+
+export default {
+  data() {
+    return {
+      coffeeId: this.$route.params.id,
+    };
+  },
+  methods: {
+    // Spread map actions
+    ...mapActions(["fetchBrews"]),
+  },
+  computed: mapGetters(["allBrews"]),
+  created() {
+    // Fetch coffees
+    this.fetchBrews();
+  },
+};
+</script>

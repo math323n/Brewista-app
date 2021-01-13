@@ -26,6 +26,7 @@
 <script>
 import CoffeeListItem from "../components/CoffeeListItem.vue";
 import { mapGetters, mapActions } from "vuex";
+
 export default {
   components: {
     CoffeeListItem,

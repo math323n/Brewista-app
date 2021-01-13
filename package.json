@@ -1,5 +1,5 @@
 {
-  "name": "brewista-app",
+  "name": "Brewista-app",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
